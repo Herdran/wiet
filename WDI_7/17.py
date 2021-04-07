@@ -1,0 +1,1 @@
+"""pierdolę to to samo znowu"""
