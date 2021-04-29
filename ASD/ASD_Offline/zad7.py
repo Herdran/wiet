@@ -1,6 +1,4 @@
 from queue import PriorityQueue
-import time
-import timeit
 
 
 # funkcja przypisująca kody
@@ -63,21 +61,5 @@ def huffman(S, F):
 # S = ["a", "b", "c", "d", "e", "f"]
 # F = [10, 11, 7, 13, 1, 20]
 
-# S = ['a', 'b', 'c', 'd', 'e', 'f']
-# F = [5, 9, 12, 13, 16, 45]
-#
-# S = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'y', 'z']
-# F = [27, 32, 123, 15, 4, 32, 23, 13, 44, 32, 12, 5, 3, 145, 54, 34, 98, 102, 76, 243, 45, 65, 78]
 
-S = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'y', 'z']
-F = [27, 32, 123, 15, 4, 31, 23, 13, 44, 38, 12, 5, 3, 145, 54, 34, 98, 102, 76, 243, 45, 65, 78]
-
-# S = ['a']
-# F = [25]
-
-start_time = time.time()
-start = timeit.default_timer()
 huffman(S, F)
-stop = timeit.default_timer()
-print("--- %s seconds ---" % (time.time() - start_time))
-print(stop - start)
